@@ -22,7 +22,7 @@ namespace CflowAutomationFramework.Tests
         [TestProperty("Author", "Naren")]
         public void TCID2()
         {
-            TheTestUser.clientId = "cflow-automation1.com";
+            TheTestUser.clientId = "abc.com";
             CflowLoginPage.GoTo();
             CflowLoginPage.FillOutLoginFormAndSubmit(TheTestUser);
             AssertInvalidClientErrorMessage();
@@ -33,7 +33,7 @@ namespace CflowAutomationFramework.Tests
         [TestProperty("Author", "Naren")]
         public void TCID3()
         {
-            TheTestUser.userName = "naren@cflow-automation1.com";
+            TheTestUser.userName = "xyz@abc.com";
             CflowLoginPage.GoTo();
             CflowLoginPage.FillOutLoginFormAndSubmit(TheTestUser);
             AssertInvalidUsernameOrPasswordErrorMessage();
@@ -44,7 +44,7 @@ namespace CflowAutomationFramework.Tests
         [TestProperty("Author", "Naren")]
         public void TCID4()
         {
-            TheTestUser.password = "naren1";
+            TheTestUser.password = "xyz1";
             CflowLoginPage.GoTo();
             CflowLoginPage.FillOutLoginFormAndSubmit(TheTestUser);
             AssertInvalidUsernameOrPasswordErrorMessage();
